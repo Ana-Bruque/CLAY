@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLAY</title>
+
+    <link rel="stylesheet" href="CSS/fullpage.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Gruppo|Montserrat:300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <header class="navigation"> 
+        <nav class="fixed-menu">
+            <div class="left-side-menu">
+                <div>
+                    <img class="menu-logo js-nav-icon" src="./IMAGES/iconfinder_menu_2639862.svg" alt="menu icon">
+                    <a href="index.html"><h1>CLAY</h1></a>
+                </div>
+            </div>
+            <div class="right-side-menu" >
+                <div>
+                    <a href="https://www.instagram.com/anibruq/" target="_blank"><img class="instagram-logo" src="./IMAGES/iconfinder_Social-media-expand_Instagram_4362948.svg" alt="instagram icon"></a>
+                </div>
+            </div>
+        </nav>
+        <nav class="sliding-menu">
+            <div class="sliding-menu-exit">
+                <img class="exit-menu-logo js-nav-icon" src="./IMAGES/iconfinder_x_2561505.svg" alt="menu icon">
+            </div>
+            <div class="sliding-menu-content">
+                <div>
+                    <a href="learn.html">LEARN</a>
+                    <a href="meet.html">MEET</a>
+                    <a href="collect.html">COLLECT</a>
+                    <a href="join.html">JOIN</a>
+                    <a class="about-link" href="about.html">ABOUT</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+            <section class="page-headline">
+                <div>
+                    <h3>JOIN</h3>
+                    <p>Sign up to hear more about CLAY and other pottery goodies.</p>
+                </div>
+            </section>
+            <section class="page-section text-section">
+                <div class="page-subsection form">
+                    <div>
+                        <form action="https://formspree.io/mvobvjbb" method="POST">
+                            <div>
+                                <label for="first-name" class="labelStyle">*Name:</label>
+                                <input required type="text" id="first-name" name="first-name" class="formStyle">
+                            </div>
+                            <div>
+                                <label for="last-name" class="labelStyle">Last Name:</label>
+                                <input type="text" id="last-name" name="last-name" class="formStyle">
+                            </div>
+                            <div>
+                                <label for="_replyto" class="labelStyle">*E-mail:</label>
+                                <input required type="email" id="email" name="_replyto" class="formStyle">
+                            </div>
+                            <div>
+                                <label for="instagram" class="labelStyle">Instagram handle:</label>
+                                <input type="text" id="instagram" name="instagram" class="formStyle">
+                            </div>
+                            <div>
+                                <label for="city" class="labelStyle">City, Country:</label>
+                                <input type="text" placeholder="London, UK" id="city" name="city" class="formStyle">
+                            </div>
+                            <div>
+                                <label for="client-type" class="labelStyle">*You are a:</label>
+                                <select required id="client-type" name="client-type" class="formStyle">
+                                    <option value="Pottery Studio">Pottery Studio</option>
+                                    <option value="Art Gallery">Art Gallery</option>
+                                    <option value="Professional Potter">Professional Potter</option>
+                                    <option value="Potter in the making">Potter in the making</option>
+                                    <option value="Pottery Collector">Ceramics Collector</option>
+                                    <option value="Pottery & Clay Lover">Pottery & Ceramics Lover</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="website" class="labelStyle">Website:</label>
+                                <input type="url" placeholder="htpps://" id="website" name="website" class="formStyle">
+                            </div>
+                            <div>
+                                <label for="message" class="labelStyle">Tell us about you!</label>
+                                <textarea cols="30" rows="7" id="message" name="message" placeholder="What are your pottery likes,practice, courses, workshops, makers and exhibitions?"></textarea class="formStyle">
+                            </div>
+                            <div class="checkbox-field">
+                                <input type="checkbox" id="opt-in" name="opt-in" class="form-checkbox-style">
+                                <label for="opt-in" class="labelStyle">I'd like to receive updates and newsletters via email.</label>
+                            </div>
+                            <div class="submit-field">
+                                <input type="submit" class="button .form-submit-style">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <script src="JS/script.js"></script>
+    
+</body>
+</html>
+    

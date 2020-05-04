@@ -1,0 +1,923 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html { 
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    width: 100%;
+}
+
+/* INDEX - NAVIGATION CSS*/
+
+.navigation {
+    width: 100%;
+    position: fixed;
+    z-index: 500;
+}
+
+.fixed-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+}
+
+.left-side-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    padding: 1.5rem 1.2rem;
+    margin: 0rem;
+}
+
+.right-side-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 10%;
+    padding: 1.5rem 1.2rem;
+    margin: 0rem;
+}
+
+.menu-logo {
+    width: 50px;
+}
+
+.left-side-menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.left-side-menu h1 {
+    display: inline;
+    font-family: 'Gruppo', cursive;
+    font-size: 5rem;
+    font-weight: normal;
+    margin: 0;
+    padding-left: 0.5rem;
+    line-height: 0;
+    letter-spacing: 0.2rem;
+}
+
+.instagram-logo { 
+    width: 40px;
+}
+
+.sliding-menu {
+    position: absolute;
+    top: 0px;
+    left:0px;
+    z-index: 5000;
+
+    width: 34%;
+    height: 100vh;
+    background-color: #ffffff;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    -webkit-transform: translate(-150%);
+        -ms-transform: translate(-150%);
+            transform: translate(-150%);
+}
+
+.sliding-menu.is-active {
+    -webkit-transform: translate(0%);
+        -ms-transform: translate(0%);
+            transform: translate(0%);
+}
+
+.exit-menu-logo {
+    width: 55px;
+}
+
+.sliding-menu-exit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1.5rem 1.2rem;
+}
+
+.sliding-menu-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 70vh;
+}
+
+.sliding-menu-content a {
+    display: block;
+    text-decoration: none;
+    color: #21544d;
+    font-size: 2.5rem;
+}
+
+.about-link {
+    margin-top: 60px;
+}
+
+/* INDEX - CSS*/
+
+.hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.hero-description {
+    width: 100%;
+    position: relative;
+    padding: 0rem 1.2rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.hero-description p {
+    font-weight: bold;
+    margin: 0.6rem 0 1.8rem 0;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #21544d;
+    padding: 0.4rem 3rem;
+    border: none;
+    color: white;
+    border-radius: 0.25rem;
+    -webkit-box-shadow: 0px 0.1rem #193E39;
+            box-shadow: 0px 0.1rem #193E39;
+    margin: 0;
+}
+
+.description-block2 {
+    position: absolute;
+    top: 48vh;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.arrow {
+    width: 40px;
+}
+
+.description-block3 {
+    position: absolute;
+    top: 95vh;
+    right: 1.2rem;
+    font-size: 0.7rem;
+}
+
+.cont-learn {
+    background: url(../IMAGES/Photo\ by\ Juliet\ Furst\ on\ Unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.cont-meet {
+    background: url(../IMAGES/Photo\ by\ Nirmal\ Rajendharkumar\ on\ Unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cont-collect {
+    background: url(../IMAGES/Photo\ by\ Tom\ Crew\ on\ Unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cont-join {
+    background: url(../IMAGES/2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* MEET - CSS*/
+
+.page {
+    text-align: center;
+}
+
+.page-headline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    height: 30vh;
+    width: 100%;
+    padding: 4rem 1.2rem 0;
+    background-color:#21544d;
+    text-align: center;
+    
+    position: fixed;
+    z-index: 400;
+    width: 100%;
+    margin: 0;
+}
+
+
+.page-headline p{
+    margin-top: 0.5rem;
+}
+
+.page-section {
+    position: relative;
+    top: 30vh;
+    padding: 0rem 1.2rem;
+}
+
+.page-subsection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 70vh;
+}
+
+.page-image {
+    background-size: cover;
+    background-position: center center;
+    border-top: 1rem solid #FFFFFF;
+    border-bottom: 1rem solid #FFFFFF;
+}
+
+.meet-maker-image {
+    width: 33.3333%;
+}
+
+.a1-left {
+    background-image: url(../IMAGES/meet/Claudia+Wassiczek\,+untitled.A1jpg.jpg);
+}
+
+.a1-right {
+    background-image: url(../IMAGES/meet/Claudia+Wassiczek\,+Momentum.A2.jpg);
+}
+
+.a2-left {
+    background-image: url(../IMAGES/meet/Lise_Herud_Braten_sculptural-3\ A1.jpg);
+}
+
+.a2-right {
+    background-image: url(../IMAGES/meet/LiseHerudBraten_oneofakind-29\ A2.jpg);
+    background-position: bottom center;
+}
+
+.a3-left {
+    background-image: url(../IMAGES/meet/Barbara\ Gittings\ -\ Pod\ 14\ Biomorphic\ Ceramic\ Sculpture\ A1.jpg);
+}
+
+.a3-right {
+    background-image: url(../IMAGES/meet/Barbara\ Gittings\ -\ Head\ Bowl\ A2.jpg);
+}
+
+.a4-left {
+    background-image: url(../IMAGES/meet/verity\ howard\ Ceramics\ -\ A1.jpg);
+}
+
+.a4-right {
+    background-image: url(../IMAGES/meet/verity\ Howard\ Ceramics\ -\ A2.jpg);
+}
+
+.page-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    color: #21544d;
+    background-color: #FFFFFF;
+    font-weight: normal;
+
+    padding: 1rem 1.2rem 1rem 1.2rem;
+}
+
+
+.meet-content-description {
+    width: 33.3333%;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0 0 1.5rem 0;
+}
+
+
+/* LEARN - CSS*/
+
+.studio-section {
+    width: 66.6666%;
+}
+
+.studio {
+    width: 100%;
+}
+
+.studio-image {
+    width: 50%;
+}
+
+.studio-description {
+    width: 50%;
+}
+
+.address {
+    margin: 1rem 2rem 2rem 2rem;
+    font-size: 0.85rem;
+    position: relative;
+}
+
+.address p {
+    margin: 0;
+}
+
+.highlight {
+    position: relative;
+    padding: 0.3rem 0;
+    cursor: pointer;
+}
+
+.highlight:after{
+	content: '';
+	width: 100%;
+	height: 85%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	border-bottom: 2px solid #21544d;
+	opacity: 0;
+	
+	-webkit-transition: all .2s ease;
+	
+	-o-transition: all .2s ease;
+	
+	transition: all .2s ease;
+}
+
+.highlight:hover:after{
+	opacity: 1;
+	height: 100%;
+	
+	-webkit-transition: all 0.3s ease;
+	
+	-o-transition: all 0.3s ease;
+	
+	transition: all 0.3s ease;
+}
+
+.s1-left {
+    background-image: url(../IMAGES/learn/crownworkpottery.jpg);
+}
+
+.s2-left {
+    background-image: url(../IMAGES/learn/thekilnrooms.jpg);
+}
+
+.s3-left {
+    background-image: url(../IMAGES/learn/turningearthe2.jpg);
+}
+
+.s4-left {
+    background-image: url(../IMAGES/learn/KANASTUDIO.jpeg);
+}
+
+.map-container {
+    background-color: #FFFFFF;
+    height: 70vh;
+    width: 33.3333%;
+    
+    position: fixed;
+    right: 1.2rem;
+    z-index: 400;
+
+    border-top: 1rem solid #FFFFFF;
+    border-bottom: 1rem solid #FFFFFF;
+}
+
+#studio-map-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* COLLECT - CSS*/
+
+.g1-left {
+    background-image: url('../IMAGES/collect/Yo-Akiyama-and-Genta-Ishizuka-2019-erskinehallcoe-18.jpg');
+}
+
+.g2-left {
+    background-image: url('../IMAGES/collect/marsden\ woo\ -\ ken\ eastman.jpg');
+}
+
+.g3-left {
+    background-image: url('../IMAGES/collect/Yvonna-Demczynska-flow-gallery-11-950x634.jpg');
+}
+
+.g4-left {
+    background-image: url('../IMAGES/collect/Made\ in\ Britaly\ -\ The\ fated\ human\ desire\ for\ sensemaking\ .jpg');
+}
+
+.g5-left {
+    background-image: url('../IMAGES/collect/Maud_and_Mabel_Hampstead_London_Photo_Christine_Hanway-06.jpg');
+}
+
+/* JOIN - CSS*/
+
+.text-section {
+    color: #21544d;
+    padding: 4rem 1.2rem;
+}
+
+.form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.labelStyle {
+    text-align: left;
+}
+
+select {
+    cursor: pointer;
+    /* Remove select styling */
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    background-color: #fff;
+	background-image: url(../IMAGES/iconfinder_down_GREEN1303877.svg);
+	background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+	background-size: 1.1rem auto, 100%;
+}
+
+.formStyle, textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+.formStyle, select, textarea { 
+    background-color: #FFFFFF;
+    color: #21544d;
+    padding: 1.5rem; 
+    width: 100%; 
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #21544d;
+    border-top-style: none; 
+    border-right-style: none; 
+    border-left-style: none; 
+    border-radius: none;
+    outline: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #CECCCC;
+    font-size: 0.9rem;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #CECCCC;
+    font-size: 0.9rem;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #CECCCC;
+    font-size: 0.9rem;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+    color: #CECCCC;
+    font-size: 0.9rem;
+}
+
+input::placeholder, textarea::placeholder, select {
+    color: #CECCCC;
+    font-size: 0.9rem;
+}
+
+input[type="checkbox"] + label {
+    text-transform: none;
+    width: auto;
+    letter-spacing: 0;
+}
+
+.checkbox-field{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.checkbox-field input{
+    width: 7%;
+    background-color: #21544d;
+}
+
+.checkbox-field label{
+    width: 93%;
+}
+
+.form-checkbox-style {
+    outline: none;
+}
+
+.submit-field{ 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.form-submit-style {
+    outline: none;
+}
+
+/*ABOUT - CSS*/
+
+.about-section {
+    width: 100%;
+    color: #21544d;
+    height: 70vh;
+}
+
+.about {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 24vh;
+    padding: 2rem 3.6rem 1.2rem 3.6rem;
+}
+
+.instagram-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 38vh;
+}
+
+.instagram-image {
+    width: 19%;
+    height: 85%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.inst-1 {
+ background-image: url(../IMAGES/about/tom-crew-A1.jpg);
+}
+.inst-2 {
+    background-image: url(../IMAGES/about/tom-crew-A2.jpg);
+}
+.inst-3 {
+    background-image: url(../IMAGES/about/victoria-wendish-A1.jpg);
+ }
+.inst-4 {
+       background-image: url(../IMAGES/about/viviane-okubo-A2.jpg);
+}
+.inst-5 {
+    background-image: url(../IMAGES/about/viviane-okubo-A1.jpg);
+}
+
+.contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 8vh;
+    padding: 1.2rem;
+    border-top: 2px solid #21544d;
+}
+
+.contact p {
+    width: 33.3333%;
+    margin: 0;
+}
+
+/* MEDIA QUERIES- CSS*/
+
+@media (max-width:1020px) {
+    html {
+        font-size: 12px; 
+    }
+    .sliding-menu {
+        width: 101%;
+    }
+    .exit-menu-logo {
+        width: 35px;
+    }
+    .instagram-logo, .menu-logo{
+        width: 30px;
+    }
+    .arrow {
+        width: 30px;
+    }
+    .left-side-menu h1 {
+        font-size: 4rem;
+    }
+    .page-headline h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:1080px) and (orientation:landscape) {
+  
+    .a1-right , .a2-right , .a3-right , .a4-right {
+        display: none;
+    }
+    
+    .meet-maker-image {
+        width: 40%;
+    }
+
+    .page-description {
+        padding: 1rem 0rem 1rem 1.2rem;
+    }
+    .meet-content-description {
+        width: 60%;
+        
+    }
+    .studio-description-offers {
+        display: none;
+    }
+
+    .address {
+        margin: 1rem 0rem 1rem 0rem;
+    }
+    .studio-description {
+        padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+    }
+
+    .about {
+        padding: 2rem 0 0 0;
+    }
+
+    .instagram-grid {
+        height: 28vh;
+    }
+    .contact {
+        height: 18vh;
+    }
+   
+}
+
+@media (max-width:600px) and (orientation:portrait) {
+    .page-headline {
+        height: 25vh;
+        padding: 5.5rem 1.2rem 0;
+    }
+    .page-section {
+        top: 25vh;
+    }
+    .a1-right , .a2-right , .a3-right , .a4-right {
+        display: none;
+    }
+    .meet-maker {
+        display: block;
+        height: 75vh;
+    }
+    .meet-maker-image {
+        width: 100%;
+        height: 34vh;
+        border-top: 0.8rem solid #FFFFFF;
+        border-bottom: 0.8rem solid #FFFFFF;
+    }
+    .meet-content-description {
+        width: 100%;
+        height: 36vh;
+        padding: 0rem 1.2rem 1rem 1.2rem;
+    }
+    .studio {
+        position: relative;
+        height: 45vh;
+        top: 29vh;
+    }
+
+    .studio-section {
+        width: 100%;
+        height: 45vh;
+    }
+    .studio-description {
+        padding: 1.2rem 0rem 1.2rem 1.2rem;
+    }
+    .address {
+        margin: 1rem 0rem 1rem 0rem;
+    }
+    .studio-description-offers {
+        display: none;
+    }
+    .map-container {
+        height: 30vh;
+        width: 100%;
+    
+        right: 0;
+        left: 0;
+        top: 25vh;
+    
+        border-right: 1.2rem solid #FFFFFF;
+        border-left: 1.2rem solid #FFFFFF;
+        border-bottom: 1rem solid #FFFFFF;
+    }
+
+    .about {
+        height: 23vh;
+        padding: 2rem 0 0 0;
+    }
+
+    .instagram-grid {
+        height: 34vh;
+    }
+
+    .instagram-image {
+        width: 32%;
+    }
+    .inst-4, .inst-5 {
+        display: none;
+    }
+
+    .contact {
+        display: block;
+        height: 13vh;
+    }
+    .contact p{
+        width: 100%;
+    }
+    .form{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+}
+
+@media (min-width:600px) and (orientation:portrait) {
+    .page-headline {
+        height: 25vh;
+        padding: 5.5rem 1.2rem 0;
+    }
+    .page-section {
+        top: 25vh;
+    }
+    .a1-right , .a2-right , .a3-right , .a4-right {
+        display: none;
+    }
+    .page-subsection {
+        display: block;
+        height: 75vh; 
+    }
+    .page-image {
+        width: 100%;
+        height: 40vh;
+        border-top: 0.8rem solid #FFFFFF;
+        border-bottom: 0.8rem solid #FFFFFF;
+    }
+    .page-description {
+        width: 100%;
+        height: 35vh;
+    }
+    .map-container {
+        width: 40%;
+        height: 75vh;
+        border-left: 1rem solid #ffffff;
+    }
+    .studio-section{
+        width: 60%;
+    }
+
+    .about {
+        height: 23vh;
+        padding: 5rem 0 0 0;
+    }
+
+    .instagram-grid {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        height: 34vh;
+    }
+
+    .instagram-image {
+        width: 32%;
+    }
+
+    .inst-4, .inst-5 {
+        display: none;
+    }
+
+    .contact {
+        display: block;
+        height: 10vh;
+    }
+    .contact p{
+        width: 100%;
+    }
+    .form{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+}
+
+
+/*
+
+#BBB193 --> KHAKI
+#F9E0D9 --> PALE PINK
+#E6DBD0 --> BONE
+#CECCCC --> PASTEL Grey 
+#604251 --> EGG PLANT
+#A59360 --> TUSCAN TAN *
+#A47E61 --> TUSCAN TAN DARKER
+*/
+
+
+/*Photo by Valeria Ushakova
+clay-platform.com
+*/
+

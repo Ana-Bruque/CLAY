@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLAY</title>
+
+    <link rel="stylesheet" href="CSS/fullpage.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Gruppo|Montserrat:300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <header class="navigation"> 
+        <nav class="fixed-menu">
+            <div class="left-side-menu">
+                <div>
+                    <img class="menu-logo js-nav-icon" src="./IMAGES/iconfinder_menu_2639862.svg" alt="menu icon">
+                    <a href="index.html"><h1>CLAY</h1></a>
+                </div>
+            </div>
+            <div class="right-side-menu" >
+                <div>
+                    <a href="https://www.instagram.com/anibruq/" target="_blank"><img class="instagram-logo" src="./IMAGES/iconfinder_Social-media-expand_Instagram_4362948.svg" alt="instagram icon"></a>
+                </div>
+            </div>
+        </nav>
+        <nav class="sliding-menu">
+            <div class="sliding-menu-exit">
+                <img class="exit-menu-logo js-nav-icon" src="./IMAGES/iconfinder_x_2561505.svg" alt="menu icon">
+            </div>
+            <div class="sliding-menu-content">
+                <div>
+                    <a href="learn.html">LEARN</a>
+                    <a href="meet.html">MEET</a>
+                    <a href="collect.html">COLLECT</a>
+                    <a href="join.html">JOIN</a>
+                    <a class="about-link" href="about.html">ABOUT</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="page">
+            <section class="page-headline">
+                <div>
+                    <h3>COLLECT</h3>
+                    <p>Explore a curated selection of galleries specialising in ceramics.</p>
+                </div>
+            </section>
+            <section class="page-section studio-section">
+                    <div class="map-container">
+                        <div id="studio-map-canvas"></div>
+                    </div>
+                    <div class="page-subsection studio">  
+                        <div class="page-image studio-image g1-left"> 
+                        </div>
+                        <div class="page-description studio-description">
+                            <div>
+                                <h4>Erskine, Hall & Coe</h4>
+                                <p> London, UK</p>
+                                <div class="address">
+                                    <p class="address-line">15 Royal Arcade, 28 Old Bond Street, W1S 4SP</p>
+                                    <p onclick="showme(0)" class="highlight">View on map</p>
+                                </div>
+                                <p class="studio-description-offers">The gallery specialises in Contemporary and 20th Century Ceramics, while also exploring the interplay between ceramics and two dimensional art.</p>
+                                <p class="hashtags">#ceramics #contemporary #20thcentury</p>
+                                <a class="button" href="https://www.erskinehallcoe.com/" target="_blank">Website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-subsection studio"> 
+                        <div class="page-image studio-image g2-left"> 
+                        </div>
+                        <div class="page-description studio-description">
+                            <div>
+                                <h4>Marsden Woo</h4>
+                                <p> London, UK</p>
+                                <div class="address">
+                                    <p>227b Ebury Street, SW1W 8UT</p>
+                                    <p onclick="showme(1)" class="location-link highlight">View on map</p>
+                                </div>
+                                <p class="studio-description-offers">Leading gallery in British studio ceramics with an in-depth knowledge of contemporary international applied art and design. </p>
+                                <p class="hashtags">#studioceramics #appliedart #design</p>
+                                <a class="button" href="http://marsdenwoo.com/" target="_blank">Website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-subsection studio">  
+                        <div class="page-image studio-image g3-left"> 
+                        </div>
+                        <div class="page-description studio-description">
+                            <div>
+                                <h4>Flow</h4>
+                                <p> London, UK</p>
+                                <div class="address">
+                                    <p class="location">1-5 Needham Road, W11 2RP</p>
+                                    <p onclick="showme(2)" class="location-link highlight">View on map</p>
+                                </div>
+                                <p class="studio-description-offers">Offering curated displays of contemporary craft makers, that take pride in building meaningful relationships with craftspeople and their practice. </p>
+                                <p class="hashtags">#curated #handmade #objects</p>
+                                <a class="button" href="https://flowgallery.co.uk/" target="_blank">Website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-subsection studio">  
+                        <div class="page-image studio-image g4-left"> 
+                        </div>
+                        <div class="page-description studio-description">
+                            <div>
+                                <h4>MADEINBRITALY</h4>
+                                <p> London, UK</p>
+                                <div class="address">
+                                    <p class="location">12A Chippenham Mews London, W9 2AW<br>By Appointment</p>
+                                    <p onclick="showme(3)" class="location-link highlight">View on map</p>
+                                </div>
+                                <p class="studio-description-offers">Showcasing contemporary applied arts that revive the connection between Italy and Britain as two nations that sought a synergy between aesthetics and industrial production.</p>
+                                <p class="hashtags">#appliedarts #aesthetics #industrial</p>
+                                <a class="button" href="http://www.madeinbritaly.com/" target="_blank">Website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-subsection studio">  
+                        <div class="page-image studio-image g5-left"> 
+                        </div>
+                        <div class="page-description studio-description">
+                            <div>
+                                <h4>Maud & Mabel</h4>
+                                <p> London, UK</p>
+                                <div class="address">
+                                    <p class="location">10 Perrin's Court, Hampstead, NW3 1QS</p>
+                                    <p onclick="showme(4)" class="location-link highlight">View on map</p>
+                                </div>
+                                <p class="studio-description-offers">Featuring a curated selection of beautiful everyday objects grounded in traditional Japanese aesthetics favouring unobtrusive beauty and prioritising subtlety and purity.</p>
+                                <p class="hashtags">#objects #subtlety #aesthetics</p>
+                                <a class="button" href="https://www.maudandmabel.com/" target="_blank">Website</a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+    </main>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
+
+    <script src="JS/collect-map.js"></script>
+
+    <script src="JS/script.js"></script>
+
+</body>
+</html>

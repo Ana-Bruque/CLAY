@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLAY</title>
+
+    <link rel="stylesheet" href="CSS/fullpage.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Gruppo|Montserrat:300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <header class="navigation"> 
+        <nav class="fixed-menu">
+            <div class="left-side-menu">
+                <div>
+                    <img class="menu-logo js-nav-icon" src="./IMAGES/iconfinder_menu_2639862.svg" alt="menu icon">
+                    <a href="index.html"><h1>CLAY</h1></a>
+                </div>
+            </div>
+            <div class="right-side-menu" >
+                <div>
+                    <a href="https://www.instagram.com/anibruq/" target="_blank"><img class="instagram-logo" src="./IMAGES/iconfinder_Social-media-expand_Instagram_4362948.svg" alt="instagram icon"></a>
+                </div>
+            </div>
+        </nav>
+        <nav class="sliding-menu">
+            <div class="sliding-menu-exit">
+                <img class="exit-menu-logo js-nav-icon" src="./IMAGES/iconfinder_x_2561505.svg" alt="menu icon">
+            </div>
+            <div class="sliding-menu-content">
+                <div>
+                    <a href="learn.html">LEARN</a>
+                    <a href="meet.html">MEET</a>
+                    <a href="collect.html">COLLECT</a>
+                    <a href="join.html">JOIN</a>
+                    <a class="about-link" href="about.html">ABOUT</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="page">
+            <section class="page-headline">
+                <div>
+                    <h3>LEARN</h3>
+                    <p>Find the best pottery studios and courses that London has to offer.</p>
+                </div>
+            </section>
+            <section class="page-section studio-section">
+                    <div class="map-container">
+                        <div id="studio-map-canvas"></div>
+                    </div>
+                    <div class="page-subsection studio">  
+                        <div class="page-image studio-image s1-left"> 
+                        </div>
+                        <div class="page-description studio-description">
+                            <div>
+                                <h4>CROWN WORKS POTTERY</h4>
+                                <p> London, UK</p>
+                                <div class="address">
+                                    <p class="address-line">11 Crown Works, Temple Street, E2 6QQ</p>
+                                    <p onclick="showme(0)" class="highlight">View on map</p>
+                                </div>
+                                <p class="studio-description-offers"> Taster sessions, day courses, weekend workshops and 5 Week daytime/evening courses. Availability for beginner to advance levels.</p>
+                                <p class="hashtags">#throwing #handbuild #sculpting</p>
+                                <a class="button" href="https://www.crownworkspottery.com/" target="_blank">Website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-subsection studio"> 
+                        <div class="page-image studio-image s2-left"> 
+                        </div>
+                        <div class="page-description studio-description">
+                            <div>
+                                <h4>THE KILN ROOMS</h4>
+                                <p> London, UK</p>
+                                <div class="address">
+                                    <p>Unit 202, Level 2 - Peckham Levels, 95A Rye Lane, SE15 4ST</p>
+                                    <p onclick="showme(1)" class="location-link highlight">View on map</p>
+                                </div>
+                                <p class="studio-description-offers">Taster sessions, 4 week course, 12 week daytime/evening courses and masterclasses. Availability for beginner to advance levels.</p>
+                                <p>#throwing #handbuild #mouldwork</p>
+                                <a class="button" href="http://www.thekilnrooms.com/" target="_blank">Website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-subsection studio">  
+                        <div class="page-image studio-image s3-left"> 
+                        </div>
+                        <div class="page-description studio-description">
+                            <div>
+                                <h4>TURNING EARTH E2</h4>
+                                <p> London, UK</p>
+                                <div class="address">
+                                    <p class="location">Railway Arches 361-362, Whiston Road, E2 8BW</p>
+                                    <p onclick="showme(2)" class="location-link highlight">View on map</p>
+                                </div>
+                                <p class="studio-description-offers">12 week daytime/evening courses, masterclasses and Open-access membership. Availability for beginner to advance levels.</p>
+                                <p>#throwing #handbuild #glazing</p>
+                                <a class="button" href="https://www.turningearth.org/e2" target="_blank">Website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-subsection studio">  
+                        <div class="page-image studio-image s4-left"> 
+                        </div>
+                        <div class="page-description studio-description">
+                            <div>
+                                <h4>KANA</h4>
+                                <p> London, UK</p>
+                                <div class="address">
+                                    <p class="location">First Floor, 5a Gransden Avenue, E8 3QA</p>
+                                    <p onclick="showme(3)" class="location-link highlight">View on map</p>
+                                </div>
+                                <p class="studio-description-offers">One-off and weekend workshops, 3 week evening courses, japanese kurinuki workshops and pottery retreats. Availability for beginner to intermediate levels.</p>
+                                <p>#handbuild #Kurinuki #sculpting</p>
+                                <a class="button" href="https://www.kanalondon.com/october-retreat" target="_blank">Website</a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+    </main>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
+
+    <script src="JS/learn-map.js"></script>
+
+    <script src="JS/script.js"></script>
+
+</body>
+</html>
