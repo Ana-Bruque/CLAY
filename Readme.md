@@ -11,21 +11,27 @@ To accomplish this, I was tasked at using the technologies and methods that I ha
 
 ## Users should be able to:
 1. Experience full page scrolling in Homepage
+
 ![](readme-files/fullpage.gif)
 
 1. Show and hide navigation items when clicking on the ☰ or ✖️ icons
+
 ![](readme-files/menu.gif)
 
 1. Hovering over 'View on map' in LEARN and COLLECT pages would trigger a underlining animation 
+
 ![](readme-files/animation.gif)
 
 1. Pages LEARN and COLLECT show a Google Map with one Marker per listed item in the page
+
 ![](readme-files/googlemarkers.gif)
 
 1. Clicking 'View on map' will trigger a bounce animation on the linked marker and stop after some time
+
 ![](readme-files/markerbounce.gif)
 
 1. Subscribe to newsletters
+
 ![](readme-files/form.gif)
 
 
